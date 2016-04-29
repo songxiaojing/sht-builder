@@ -1,0 +1,6 @@
+#1 Run configuration -> Edit Configuration
+#2 Create new Maven Runner
+#3 Paremeter
+Working Directory :/home/martin/projects/stock/code/houseTrack/sht-builder
+Command Line:mybatis-generator:generate -e
+
