@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+	<classPathEntry location="/home/martin/projects/stock/code/houseTrack/sht-builder/sources/database/mysql-connector-java-5.1.30.jar"/>
+	<context id="stock">
+		<commentGenerator>
+			<property name="suppressAllComments" value="true" />
+		</commentGenerator>
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://127.0.0.1:3306/STOCK" userId="STOCK" password="STOCK" />
+		<javaModelGenerator targetPackage="com.byw.stock.house.track.module.stock.module" targetProject="/home/martin/projects/stock/code/houseTrack/sht-builder/src/main/java" />
+		<sqlMapGenerator targetPackage="com.byw.stock.house.track.module.stock.mapper" targetProject="/home/martin/projects/stock/code/houseTrack/sht-builder/src/main/java" />
+		<javaClientGenerator targetPackage="com.byw.stock.house.track.module.stock.dao" targetProject="/home/martin/projects/stock/code/houseTrack/sht-builder/src/main/java" type="XMLMAPPER" />
+		<table schema="STOCK" tableName="LISTED_STOCK" enableSelectByExample="false" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" selectByExampleQueryId="false">
+			<!-- <property name="rootClass" value="com.topsec.tss.platform.module.AbstractResourceBean" /> <property name="rootInterface" value="com.topsec.tss.platform.module.IMapper" /> -->
+		</table>
+		<table schema="STOCK" tableName="LISTED_STOCK_FETCH_PLAN" enableSelectByExample="false" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" selectByExampleQueryId="false">
+			<!-- <property name="rootClass" value="com.topsec.tss.platform.module.AbstractResourceBean" /> <property name="rootInterface" value="com.topsec.tss.platform.module.IMapper" /> -->
+		</table>
+		<table schema="STOCK" tableName="LISTED_STOCK_FETCH_TASK" enableSelectByExample="false" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" selectByExampleQueryId="false">
+			<!-- <property name="rootClass" value="com.topsec.tss.platform.module.AbstractResourceBean" /> <property name="rootInterface" value="com.topsec.tss.platform.module.IMapper" /> -->
+		</table>
+	</context>
+	<context id="stock_trading">
+		<commentGenerator>
+			<property name="suppressAllComments" value="true" />
+		</commentGenerator>
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://127.0.0.1:3306/STOCK_TRADING" userId="STOCK" password="STOCK" />
+		<javaModelGenerator targetPackage="com.byw.stock.house.track.module.trading.module" targetProject="/home/martin/projects/stock/code/houseTrack/sht-builder/src/main/java" />
+		<sqlMapGenerator targetPackage="com.byw.stock.house.track.module.trading.mapper" targetProject="/home/martin/projects/stock/code/houseTrack/sht-builder/src/main/java" />
+		<javaClientGenerator targetPackage="com.byw.stock.house.track.module.trading.dao" targetProject="/home/martin/projects/stock/code/houseTrack/sht-builder/src/main/java" type="XMLMAPPER" />
+		<table schema="STOCK_TRADING" tableName="TRADING_RECORD" enableSelectByExample="false" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" selectByExampleQueryId="false">
+			<!-- <property name="rootClass" value="com.topsec.tss.platform.module.AbstractResourceBean" /> <property name="rootInterface" value="com.topsec.tss.platform.module.IMapper" /> -->
+		</table>
+	</context>
+</generatorConfiguration>
